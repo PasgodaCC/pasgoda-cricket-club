@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Events | Pasgoda CC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0f172a',
+                        brandGold: '#d4af37',
+                        brandLightBlue: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-brandBlue text-gray-200 font-sans pt-20">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-brandBlue/90 backdrop-blur-md border-b border-brandGold/20 h-20 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="assets/logo.png" alt="Pasgoda CC Logo"
+                            class="h-14 w-auto group-hover:scale-110 transition duration-300"
+                            onerror="this.src='https://via.placeholder.com/150x150?text=Logo'">
+                        <span
+                            class="font-heading font-bold text-2xl tracking-wider text-brandGold group-hover:text-white transition duration-300">PASGODA
+                            CC</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Team
+                            & Jersey</a>
+                        <a href="events.html"
+                            class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Events</a>
+                        <a href="past-events.html"
+                            class="text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Past
+                            Events</a>
+                        <a href="contact.html"
+                            class="bg-brandGold text-brandBlue px-4 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)]">Join
+                            Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-brandGold hover:text-white hover:bg-brandLightBlue focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-brandBlue border-b border-brandGold/20 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html"
+                    class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Team &
+                    Jersey</a>
+                <a href="events.html"
+                    class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="past-events.html" class="text-brandGold block px-3 py-2 rounded-md text-base font-medium">Past
+                    Events</a>
+                <a href="contact.html"
+                    class="text-brandBlue bg-brandGold block px-3 py-2 rounded-md text-base font-bold">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-brandLightBlue py-16 border-b border-brandGold/10 relative overflow-hidden">
+        <div class="absolute opacity-10 top-0 left-0 w-full h-full object-cover">
+            <img src="assets/past_poster.jpg" class="w-full h-full object-cover blur-sm"
+                onerror="this.style.display='none'">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center fade-in-element">
+            <h1 class="font-heading text-4xl md:text-5xl font-bold text-white mb-4 uppercase tracking-wider">Previous
+                <span class="text-brandGold">Tournaments</span></h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Celebrating past glories, champions, and unforgettable
+                cricket moments.</p>
+        </div>
+    </div>
+
+    <!-- Past Event Section: Adarawanthayange Satana 2026 -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-6 flex justify-center fade-in-element">
+                <span
+                    class="px-6 py-2 bg-green-500/20 text-green-400 border border-green-500/50 rounded-full font-bold tracking-widest text-sm uppercase flex items-center gap-2 shadow-[0_0_15px_rgba(34,197,94,0.3)]">
+                    <i class="fas fa-check-circle"></i> Tournament Successfully Completed!
+                </span>
+            </div>
+
+            <div
+                class="bg-gradient-to-b from-brandLightBlue to-brandBlue border border-brandGold/20 rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                    <!-- Poster Side -->
+                    <div class="p-6 md:p-10 flex flex-col justify-center items-center bg-black/20">
+                        <div class="relative group w-full max-w-md fade-in-element">
+                            <div
+                                class="absolute -inset-1 bg-gradient-to-r from-brandGold to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                            </div>
+                            <img src="assets/past_poster.jpg" alt="Adarawanthayange Cricket Sangramaya 2026"
+                                class="relative rounded-xl w-full h-auto shadow-2xl transform group-hover:scale-[1.02] transition duration-500 will-change-transform"
+                                onerror="this.src='https://via.placeholder.com/800x1000?text=Event+Poster'">
+                        </div>
+                    </div>
+
+                    <!-- Info and Results Side -->
+                    <div class="p-8 md:p-12 lg:pl-0 flex flex-col justify-center relative fade-in-element"
+                        style="transition-delay: 200ms;">
+                        <h2 class="font-heading text-3xl md:text-5xl text-white mb-2 leading-tight">Adarawanthayange
+                            Satana <br><span class="text-brandGold">2026</span></h2>
+                        <p class="text-gray-400 mb-8 uppercase tracking-widest text-sm font-semibold">February 14 -
+                            Pasgoda</p>
+
+                        <!-- Final Results -->
+                        <div class="space-y-4 mb-8">
+                            <h3 class="font-heading text-2xl text-brandGold border-b border-brandGold/20 pb-2 mb-4">
+                                Final Results</h3>
+
+                            <div
+                                class="bg-gradient-to-r from-blue-900/40 to-transparent border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                <div class="text-blue-400 text-xs font-bold uppercase tracking-widest mb-1"><i
+                                        class="fas fa-trophy mr-1"></i> Champions</div>
+                                <div class="text-white font-heading text-2xl">Deniyaya Uduwaka Cricket Club</div>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-orange-900/40 to-transparent border-l-4 border-orange-500 p-4 rounded-r-lg">
+                                <div class="text-orange-400 text-xs font-bold uppercase tracking-widest mb-1"><i
+                                        class="fas fa-medal mr-1"></i> Runners up</div>
+                                <div class="text-white font-heading text-2xl">Pasgoda Cricket Club</div>
+                            </div>
+                        </div>
+
+                        <!-- Special Awards Grid -->
+                        <div class="bg-brandGold/5 border border-brandGold/20 rounded-xl p-6">
+                            <h4
+                                class="text-brandGold font-bold mb-5 text-sm tracking-widest uppercase border-b border-brandGold/20 pb-2 inline-block">
+                                Individual Awards</h4>
+                            <div class="space-y-4">
+                                <div
+                                    class="flex items-center gap-4 hover:bg-white/5 p-2 rounded-lg transition border border-transparent hover:border-brandGold/30">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-brandLightBlue border border-brandGold/50 flex items-center justify-center shrink-0 drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]">
+                                        <i class="fas fa-star text-brandGold text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brandGold font-bold uppercase tracking-wider mb-1">Man Of
+                                            the Tournament</p>
+                                        <h5 class="text-white text-lg font-heading">Kavindu Udara</h5>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-center gap-4 hover:bg-white/5 p-2 rounded-lg transition border border-transparent hover:border-brandGold/30">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-brandLightBlue border border-brandGold/50 flex items-center justify-center shrink-0 drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]">
+                                        <i class="fas fa-baseball-bat-ball text-brandGold text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brandGold font-bold uppercase tracking-wider mb-1">Best
+                                            Batsman</p>
+                                        <h5 class="text-white text-lg font-heading">Surath Kelum</h5>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="flex items-center gap-4 hover:bg-white/5 p-2 rounded-lg transition border border-transparent hover:border-brandGold/30">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-brandLightBlue border border-brandGold/50 flex items-center justify-center shrink-0 drop-shadow-[0_0_10px_rgba(212,175,55,0.3)]">
+                                        <i class="fas fa-baseball-ball text-brandGold text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-brandGold font-bold uppercase tracking-wider mb-1">Best
+                                            Bowler</p>
+                                        <h5 class="text-white text-lg font-heading">Dasith Wimansana</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Memory Gallery inside the card -->
+                <div class="border-t border-brandGold/20 p-8 bg-brandBlue">
+                    <h3 class="font-heading text-2xl text-brandGold mb-6 text-center">Tournament Highlights</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                        <div
+                            class="relative group cursor-pointer overflow-hidden rounded-xl h-64 border border-brandGold/20 fade-in-element">
+                            <img src="assets/past_photo1.jpg" alt="Tournament Highlight 1"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+                                onerror="this.src='https://via.placeholder.com/400?text=Photo+1'">
+                            <div
+                                class="absolute inset-0 bg-brandBlue/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-search-plus text-brandGold text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="relative group cursor-pointer overflow-hidden rounded-xl h-64 border border-brandGold/20 fade-in-element"
+                            style="transition-delay: 100ms;">
+                            <img src="assets/past_photo2.jpg" alt="Tournament Highlight 2"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+                                onerror="this.src='https://via.placeholder.com/400?text=Photo+2'">
+                            <div
+                                class="absolute inset-0 bg-brandBlue/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-search-plus text-brandGold text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="relative group cursor-pointer overflow-hidden rounded-xl h-64 border border-brandGold/20 fade-in-element"
+                            style="transition-delay: 200ms;">
+                            <img src="assets/past_photo3.jpg" alt="Tournament Highlight 3"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+                                onerror="this.src='https://via.placeholder.com/400?text=Photo+3'">
+                            <div
+                                class="absolute inset-0 bg-brandBlue/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-search-plus text-brandGold text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="relative group cursor-pointer overflow-hidden rounded-xl h-64 border border-brandGold/20 fade-in-element"
+                            style="transition-delay: 300ms;">
+                            <img src="assets/past_photo4.jpg" alt="Tournament Highlight 4"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+                                onerror="this.src='https://via.placeholder.com/400?text=Photo+4'">
+                            <div
+                                class="absolute inset-0 bg-brandBlue/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-search-plus text-brandGold text-3xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandLightBlue border-t border-brandGold/20 py-8 text-center mt-auto text-gray-500 text-sm">
+        <p>&copy; 2026 Pasgoda Cricket Club. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
