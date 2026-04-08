@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Pasgoda CC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0f172a',
+                        brandGold: '#d4af37',
+                        brandLightBlue: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brandBlue text-gray-200 font-sans pt-20 flex flex-col min-h-screen">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-brandBlue/90 backdrop-blur-md border-b border-brandGold/20 h-20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="assets/logo.png" alt="Pasgoda CC Logo" class="h-14 w-auto group-hover:scale-110 transition duration-300" onerror="this.src='https://via.placeholder.com/150x150?text=Logo'">
+                        <span class="font-heading font-bold text-2xl tracking-wider text-brandGold group-hover:text-white transition duration-300">PASGODA CC</span>
+                    </a>
+                </div>
+                <!-- ... Nav links ... -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Home</a>
+                        <a href="about.html" class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Team & Jersey</a>
+                        <a href="events.html" class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Events</a>
+                        <a href="contact.html" class="bg-brandGold text-brandBlue px-4 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition shadow-[0_0_15px_rgba(212,175,55,0.4)]">Join Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brandGold hover:text-white hover:bg-brandLightBlue focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-brandBlue border-b border-brandGold/20 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Team & Jersey</a>
+                <a href="events.html" class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="contact.html" class="text-brandBlue bg-brandGold block px-3 py-2 rounded-md text-base font-bold">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="flex-grow w-full flex items-center justify-center p-4 py-12">
+        <div class="w-full max-w-lg bg-brandLightBlue p-8 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-brandGold/20 fade-in-element">
+            <div class="text-center mb-8">
+                <div class="w-20 h-20 bg-brandGold/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-brandGold/30">
+                    <i class="fas fa-paper-plane text-3xl text-brandGold"></i>
+                </div>
+                <h2 class="font-heading text-3xl text-white uppercase tracking-wider">Join Our Club</h2>
+                <p class="text-gray-400 mt-2 text-sm">Interested in participating, sponsoring, or just saying hi? Drop us a message.</p>
+            </div>
+            
+            <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="space-y-5">
+                    <div>
+                        <label class="block text-brandGold text-xs font-bold uppercase tracking-wider mb-2">Your Name</label>
+                        <input type="text" class="w-full bg-brandBlue border border-gray-700/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brandGold focus:ring-1 focus:ring-brandGold transition" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label class="block text-brandGold text-xs font-bold uppercase tracking-wider mb-2">Contact Number</label>
+                        <input type="tel" class="w-full bg-brandBlue border border-gray-700/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brandGold focus:ring-1 focus:ring-brandGold transition" placeholder="077-XXXXXXX" required>
+                    </div>
+                    <div>
+                        <label class="block text-brandGold text-xs font-bold uppercase tracking-wider mb-2">Message</label>
+                        <textarea class="w-full bg-brandBlue border border-gray-700/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brandGold focus:ring-1 focus:ring-brandGold transition h-32 resize-none" placeholder="We'd love to hear from you..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brandGold text-brandBlue font-bold py-4 rounded-lg hover:bg-white transition duration-300 text-lg shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)] uppercase tracking-wider mt-4">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+     <footer class="bg-brandLightBlue border-t border-brandGold/20 py-8 text-center w-full mt-auto">
+        <p class="text-gray-500 text-sm">&copy; 2026 Pasgoda Cricket Club. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

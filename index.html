@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasgoda Cricket Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0f172a',
+                        brandGold: '#d4af37',
+                        brandLightBlue: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brandBlue text-gray-200 font-sans overflow-x-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-brandBlue/90 backdrop-blur-md border-b border-brandGold/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="assets/logo.png" alt="Pasgoda CC Logo" class="h-14 w-auto group-hover:scale-110 transition duration-300" onerror="this.src='https://via.placeholder.com/150x150?text=Logo'">
+                        <span class="font-heading font-bold text-2xl tracking-wider text-brandGold group-hover:text-white transition duration-300">PASGODA CC</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-brandGold hover:text-white px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Home</a>
+                        <a href="about.html" class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Team & Jersey</a>
+                        <a href="events.html" class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Events</a>
+                        <a href="contact.html" class="bg-brandGold text-brandBlue hover:bg-white px-4 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)]">Join Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-brandGold hover:text-white hover:bg-brandLightBlue focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-brandBlue border-b border-brandGold/20 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-brandGold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Team & Jersey</a>
+                <a href="events.html" class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="contact.html" class="text-brandBlue bg-brandGold block px-3 py-2 rounded-md text-base font-bold">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Background Video/Image Placeholder -->
+            <div class="absolute inset-0 bg-brandBlue/70 mix-blend-multiply z-10"></div>
+            <!-- Dynamic Background -->
+            <img src="https://images.unsplash.com/photo-1540747913346-19e32fc3e6ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Cricket Stadium" class="w-full h-full object-cover animate-pan" />
+        </div>
+        
+        <div class="relative z-20 text-center px-4 max-w-5xl mx-auto mt-16 slide-up-element">
+            <div class="mb-6 flex justify-center">
+                <img src="assets/logo.png" alt="Logo" class="h-40 md:h-56 filter drop-shadow-[0_0_20px_rgba(212,175,55,0.5)] float-animation" onerror="this.src='https://via.placeholder.com/200?text=Logo'">
+            </div>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold text-white mb-4 tracking-wider uppercase drop-shadow-lg text-shadow-lg">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandGold to-yellow-200">Pasgoda</span> Cricket Club
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto font-light">
+                Established 2021. Forging champions, building community, and celebrating the spirit of cricket.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="events.html" class="px-8 py-4 bg-brandGold text-brandBlue font-bold uppercase tracking-wider text-sm rounded-full shadow-[0_0_20px_rgba(212,175,55,0.5)] hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transform hover:-translate-y-1 transition duration-300">
+                    Latest Events
+                </a>
+                <a href="about.html" class="px-8 py-4 bg-transparent border-2 border-brandGold text-brandGold hover:bg-brandGold hover:text-brandBlue font-bold uppercase tracking-wider text-sm rounded-full transform hover:-translate-y-1 transition duration-300">
+                    View Our Jersey
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 animate-bounce cursor-pointer" onclick="document.getElementById('features').scrollIntoView()">
+            <i class="fas fa-chevron-down text-brandGold text-3xl hover:text-white transition"></i>
+        </div>
+    </div>
+
+    <!-- Quick Features -->
+    <section id="features" class="py-20 bg-brandBlue relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-brandLightBlue p-8 rounded-2xl border border-brandGold/10 hover:border-brandGold/40 transition duration-300 transform hover:-translate-y-2 group fade-in-element">
+                    <div class="w-16 h-16 bg-brandGold/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brandGold/20 transition">
+                        <i class="fas fa-trophy text-3xl text-brandGold group-hover:scale-110 transition"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-white mb-3 tracking-wide">Tournaments</h3>
+                    <p class="text-gray-400">Regularly organizing and participating in local and regional cricket tournaments with high prize pools.</p>
+                </div>
+                
+                <div class="bg-brandLightBlue p-8 rounded-2xl border border-brandGold/10 hover:border-brandGold/40 transition duration-300 transform hover:-translate-y-2 group fade-in-element" style="transition-delay: 100ms;">
+                    <div class="w-16 h-16 bg-brandGold/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brandGold/20 transition">
+                        <i class="fas fa-users text-3xl text-brandGold group-hover:scale-110 transition"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-white mb-3 tracking-wide">Community</h3>
+                    <p class="text-gray-400">Building a strong bond among village teams and cricket enthusiasts in Pasgoda.</p>
+                </div>
+
+                <div class="bg-brandLightBlue p-8 rounded-2xl border border-brandGold/10 hover:border-brandGold/40 transition duration-300 transform hover:-translate-y-2 group fade-in-element" style="transition-delay: 200ms;">
+                    <div class="w-16 h-16 bg-brandGold/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-brandGold/20 transition">
+                        <i class="fas fa-tshirt text-3xl text-brandGold group-hover:scale-110 transition"></i>
+                    </div>
+                    <h3 class="font-heading text-2xl text-white mb-3 tracking-wide">Premium Gear</h3>
+                    <p class="text-gray-400">Equipping our players with high-quality jerseys and gear to represent the club with pride.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandLightBlue border-t border-brandGold/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="assets/logo.png" alt="Pasgoda CC Logo" class="h-10 w-auto" onerror="this.style.display='none'">
+                        <span class="font-heading font-bold text-xl tracking-wider text-brandGold">PASGODA CC</span>
+                    </div>
+                    <p class="text-gray-400 max-w-sm mb-6">Promoting cricket and building a strong community in Pasgoda since 2021.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-brandBlue flex items-center justify-center text-brandGold hover:bg-brandGold hover:text-brandBlue transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brandBlue flex items-center justify-center text-brandGold hover:bg-brandGold hover:text-brandBlue transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-brandBlue flex items-center justify-center text-brandGold hover:bg-brandGold hover:text-brandBlue transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-brandGold transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-brandGold transition">Team & Jersey</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-brandGold transition">Events</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-brandGold transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-lg text-white mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-map-marker-alt mt-1 text-brandGold"></i>
+                            <span>Pasgoda, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-phone text-brandGold"></i>
+                            <span>077-0241791 / 074-0757226</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-brandGold/10 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 Pasgoda Cricket Club. All rights reserved. Built with ❤️ for Cricket.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

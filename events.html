@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Pasgoda CC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlue: '#0f172a',
+                        brandGold: '#d4af37',
+                        brandLightBlue: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-brandBlue text-gray-200 font-sans pt-20">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-brandBlue/90 backdrop-blur-md border-b border-brandGold/20 h-20 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="assets/logo.png" alt="Pasgoda CC Logo"
+                            class="h-14 w-auto group-hover:scale-110 transition duration-300"
+                            onerror="this.src='https://via.placeholder.com/150x150?text=Logo'">
+                        <span
+                            class="font-heading font-bold text-2xl tracking-wider text-brandGold group-hover:text-white transition duration-300">PASGODA
+                            CC</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Team
+                            & Jersey</a>
+                        <a href="events.html"
+                            class="text-brandGold px-3 py-2 rounded-md text-sm font-semibold uppercase tracking-widest transition">Events</a>
+                        <a href="contact.html"
+                            class="bg-brandGold text-brandBlue hover:bg-white px-4 py-2 rounded-md text-sm font-bold uppercase tracking-widest transition shadow-[0_0_15px_rgba(212,175,55,0.4)] hover:shadow-[0_0_20px_rgba(255,255,255,0.6)]">Join
+                            Us</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-brandGold hover:text-white hover:bg-brandLightBlue focus:outline-none"
+                        aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-brandBlue border-b border-brandGold/20 absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html"
+                    class="text-gray-300 hover:text-brandGold block px-3 py-2 rounded-md text-base font-medium">Team &
+                    Jersey</a>
+                <a href="events.html" class="text-brandGold block px-3 py-2 rounded-md text-base font-medium">Events</a>
+                <a href="contact.html"
+                    class="text-brandBlue bg-brandGold block px-3 py-2 rounded-md text-base font-bold">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="bg-brandLightBlue py-16 border-b border-brandGold/10 relative overflow-hidden">
+        <div class="absolute opacity-10 top-0 left-0 w-full h-full object-cover">
+            <img src="assets/april 16 cricket.jpg" class="w-full h-full object-cover blur-sm"
+                onerror="this.style.display='none'">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center fade-in-element">
+            <h1 class="font-heading text-4xl md:text-6xl font-bold text-white mb-4 uppercase tracking-wider">Upcoming
+                <span class="text-brandGold">Tournaments</span>
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">Get ready for the biggest village cricket showdown.</p>
+        </div>
+    </div>
+
+    <!-- Main Event Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-gradient-to-b from-brandLightBlue to-brandBlue border border-brandGold/20 rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+
+                    <!-- Poster Side -->
+                    <div class="p-6 md:p-10 flex justify-center items-center bg-black/20">
+                        <div class="relative group w-full max-w-md fade-in-element">
+                            <div
+                                class="absolute -inset-1 bg-gradient-to-r from-brandGold to-yellow-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                            </div>
+                            <img src="assets/april 16 cricket.jpg" alt="Bakmaha Sahalla Pandu Cricket Tharagawaliya"
+                                class="relative rounded-xl w-full h-auto shadow-2xl transform group-hover:scale-[1.02] transition duration-500 will-change-transform"
+                                onerror="this.src='https://via.placeholder.com/800x1000?text=Event+Poster'">
+                        </div>
+                    </div>
+
+                    <!-- Info Side -->
+                    <div class="p-8 md:p-12 lg:pl-0 flex flex-col justify-center relative fade-in-element"
+                        style="transition-delay: 200ms;">
+                        <div
+                            class="mb-4 inline-block px-4 py-1 rounded-full bg-brandGold/20 text-brandGold font-bold text-sm tracking-widest border border-brandGold/30 self-start">
+                            APRIL 16</div>
+                        <h2 class="font-heading text-3xl md:text-5xl text-white mb-6 leading-tight">Bakmaha Sahalla
+                            Pandu <br><span class="text-brandGold">Cricket Tharagawaliya</span></h2>
+
+                        <p class="text-gray-300 mb-8 text-lg break-words">
+                            Join us for the ultimate village cricket championship! A grand battle among village teams to
+                            determine the final champion of Pasgoda.
+                        </p>
+
+                        <!-- Prizes -->
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div
+                                class="bg-gradient-to-br from-blue-600/20 to-blue-900/40 border border-blue-500/30 p-4 rounded-xl text-center shadow-lg transform hover:-translate-y-1 transition hover:border-blue-500/60">
+                                <h4 class="text-blue-300 font-bold mb-1">Champions</h4>
+                                <div class="font-heading text-2xl md:text-3xl text-white">Rs. 20,000/=</div>
+                                <div class="text-xs text-gray-400 mt-1">+ Trophy</div>
+                            </div>
+                            <div
+                                class="bg-gradient-to-br from-orange-600/20 to-red-900/40 border border-orange-500/30 p-4 rounded-xl text-center shadow-lg transform hover:-translate-y-1 transition hover:border-orange-500/60">
+                                <h4 class="text-orange-300 font-bold mb-1">Runners up</h4>
+                                <div class="font-heading text-2xl md:text-3xl text-white">Rs. 15,000/=</div>
+                                <div class="text-xs text-gray-400 mt-1">+ Trophy</div>
+                            </div>
+                        </div>
+
+                        <!-- Details & Rules -->
+                        <div class="space-y-4 mb-8">
+                            <h3 class="font-heading text-xl text-brandGold border-b border-brandGold/20 pb-2 mb-4">
+                                Competition Rules & Info</h3>
+
+                            <div class="flex items-start gap-4 hover:bg-white/5 p-2 rounded-lg transition">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brandLightBlue border border-brandGold/30 flex items-center justify-center shrink-0">
+                                    <i class="fas fa-ticket-alt text-brandGold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-bold">Entry Fee</h5>
+                                    <p class="text-gray-400">Rs. 3,000/= per team</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 hover:bg-white/5 p-2 rounded-lg transition">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brandLightBlue border border-brandGold/30 flex items-center justify-center shrink-0">
+                                    <i class="fas fa-clock text-brandGold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-bold">Registration</h5>
+                                    <p class="text-gray-400">All teams must register before 9:00 AM on Match Day.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 hover:bg-white/5 p-2 rounded-lg transition">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brandLightBlue border border-brandGold/30 flex items-center justify-center shrink-0">
+                                    <i class="fas fa-users text-brandGold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-bold">Team Size</h5>
+                                    <p class="text-gray-400">Each team must consist of exactly 8 members.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 hover:bg-white/5 p-2 rounded-lg transition">
+                                <div
+                                    class="w-10 h-10 rounded-full bg-brandLightBlue border border-brandGold/30 flex items-center justify-center shrink-0">
+                                    <i class="fas fa-baseball-ball text-brandGold"></i>
+                                </div>
+                                <div>
+                                    <h5 class="text-white font-bold">Equipment</h5>
+                                    <p class="text-gray-400">Participating teams must bring their own boule ball.
+                                        Judge's decision is final.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Special Awards -->
+                        <div class="bg-brandGold/10 border border-brandGold/20 rounded-xl p-5 mb-8">
+                            <h4 class="text-brandGold font-bold text-center mb-4 text-sm tracking-widest uppercase">
+                                Special Awards</h4>
+                            <div class="flex justify-center flex-wrap gap-8 text-center">
+                                <div class="flex flex-col items-center gap-2 transform hover:scale-110 transition">
+                                    <i
+                                        class="fas fa-trophy text-brandGold text-2xl drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"></i>
+                                    <span class="text-sm text-white font-semibold">Man of the Match</span>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 transform hover:scale-110 transition">
+                                    <i
+                                        class="fas fa-trophy text-brandGold text-2xl drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"></i>
+                                    <span class="text-sm text-white font-semibold">Best Bowler</span>
+                                </div>
+                                <div class="flex flex-col items-center gap-2 transform hover:scale-110 transition">
+                                    <i
+                                        class="fas fa-trophy text-brandGold text-2xl drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]"></i>
+                                    <span class="text-sm text-white font-semibold">Best Batsman</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contacts -->
+                        <div class="mt-auto">
+                            <p class="text-gray-400 text-sm mb-3 uppercase tracking-wider font-semibold">Inquiries and
+                                Registration:</p>
+                            <div class="flex flex-wrap gap-3">
+                                <span
+                                    class="bg-brandBlue px-4 py-2 rounded-full border border-brandGold/30 text-white font-semibold text-sm hover:border-brandGold transition cursor-default">
+                                    <i class="fas fa-phone mr-2 text-brandGold"></i>Pathum: 077-0241791
+                                </span>
+                                <span
+                                    class="bg-brandBlue px-4 py-2 rounded-full border border-brandGold/30 text-white font-semibold text-sm hover:border-brandGold transition cursor-default">
+                                    <i class="fas fa-phone mr-2 text-brandGold"></i>Kavindu: 074-0757226
+                                </span>
+                                <span
+                                    class="bg-brandBlue px-4 py-2 rounded-full border border-brandGold/30 text-white font-semibold text-sm hover:border-brandGold transition cursor-default">
+                                    <i class="fas fa-phone mr-2 text-brandGold"></i>Naveen: 077-8598679
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandLightBlue border-t border-brandGold/20 py-8 text-center mt-auto">
+        <p class="text-gray-500 text-sm">&copy; 2026 Pasgoda Cricket Club. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
